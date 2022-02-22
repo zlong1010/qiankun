@@ -1,4 +1,3 @@
-// import 'zone.js'; // for angular subapp
 import { registerMicroApps, runAfterFirstMounted, setDefaultMountApp, start, initGlobalState } from '../../es';
 import './index.less';
 
@@ -6,6 +5,7 @@ import './index.less';
  * 主应用, 可以使用任意技术栈
  * 以下分别是 React 和 Vue 的示例，可切换尝试
  */
+
 // import render from './render/ReactRender';
 import render from './render/VueRender';
 
@@ -38,6 +38,13 @@ registerMicroApps(
       loader,
       activeRule: '/react16',
     },
+    // {
+    //   name: 'vue-components',
+    //   entry: '//localhost:9000',
+    //   container: '#subapp-viewport',
+    //   activeRule: '/vue-组件',
+    //   // url: https://github.com/zlong1010/vue-components
+    // },
     // {
     //   name: 'react15',
     //   entry: '//localhost:7102',
