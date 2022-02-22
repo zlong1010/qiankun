@@ -6,6 +6,9 @@ import VueRouter from 'vue-router';
 import App from './App.vue';
 import routes from './router';
 import store from './store';
+import log from '../../main/log';
+
+log('vue main.js');
 
 console.debug('\n$初始化vue2 r6nfaf67aw');
 Vue.config.productionTip = false;

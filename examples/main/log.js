@@ -4,10 +4,10 @@ export default function log(...args) {
     console.log('\n');
     return;
   }
-  if (args.length === 1) {
-    console.log(args[0]);
-    return;
-  }
+  // if (args.length === 1) {
+  //   console.log(args[0]);
+  //   return;
+  // }
   const optObj = {};
   const optObjeKMap = {
     string: 'css',
@@ -24,7 +24,7 @@ export default function log(...args) {
     args = args.slice(0, -1);
   }
   const _opt = Object.assign({
-    br: true, indent: 0, css: 'white',
+    br: true, indent: 0, css: '#00ffdd',
   }, optObj);
   if (_opt.br) {
     console.log('\n');
@@ -40,4 +40,5 @@ export default function log(...args) {
   console.log(...output);
 }
 
-window.log = log;
+// window.log = log;
+log('执行log.js');

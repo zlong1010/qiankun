@@ -16,7 +16,7 @@
   "sideEffects": false,
   "scripts": {
     "examples:install": "npm-run-all --serial build install:*",
-    "examples:start": "npm-run-all --parallel start:main start:vue start:purehtml",
+    "examples:start": "npm-run-all --parallel start:main start:vue start:purehtml start:react16",
     "examples:start-multiple": "run-p start-main-multiple start:react15 start:vue",
     "install:main": "cd examples/main && yarn",
     "start:main": "cd examples/main && yarn start",

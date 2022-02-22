@@ -1,6 +1,7 @@
 pids
 logs
 node_modules
+**/node_modules
 npm-debug.log
 coverage/
 run
